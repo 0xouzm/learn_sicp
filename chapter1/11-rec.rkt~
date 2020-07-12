@@ -1,6 +1,0 @@
-#lang sicp
-(define average-dump
-  (lambda (f)
-    (lambda (x) (average (x f(x))))
-    )
-  )
