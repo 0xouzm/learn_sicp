@@ -10,9 +10,9 @@
 (define (halve x)
 (/ x 2))
 
-(define (* a b)
+(define (multi a b)
   (cond ((= b 0) 0)
     ((even? b) 
-    (double (* a (halve b))))
+    (double (multi a (halve b))))
     (else 
-    (+ a (* a (dec b))))))
+    (+ a (multi a (dec b))))))
